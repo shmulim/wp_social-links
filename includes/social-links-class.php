@@ -37,9 +37,9 @@ class Social_Links_Widget extends WP_Widget {
 
     $icon_width = esc_attr( $instance['icon_width']);
 
-    $args['before_widget'];
+    echo $args['before_widget'];
     $this->getSocialLinks($links, $icons, $icon_width);
-    $args['after_widget'];
+    echo $args['after_widget'];
   }
 
   /**
